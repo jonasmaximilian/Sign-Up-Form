@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+@font-face {
+    font-family: "NorseBold";
+    src: url("fonts/Norse-Bold.otf");
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -84,11 +89,25 @@ body, html {
     color: white;
     top: 20vh;
     text-align: center;
-    font-size: 1.2em;
-    font-family: roboto;
+    height: fit-content;
+    
+
+    
   }
-  .card-heading {
-    position: absolute;
+
+
+  .odin {
+
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      padding: 8px;
+      font-family: "NorseBold";
+      font-size: 64px;
+      display: flex;
+      
+	
   }
 
 .left-picture {
@@ -97,15 +116,27 @@ body, html {
 }
 
 .odin-logo {
-    height: 15vh;
+    height: 12vh;
     
 }
+
+.img-credit {
+    position: absolute;
+    justify-self: flex-end;
+	color: white;
+	font-size: 0.8rem;
+	font-weight: 300;
+    bottom: 0%;
+}
+
 
 .right {
     flex: 1;
 }
 
-
+input, label {
+    display: block;
+}
 
 .top, .middle, .bottom {
     height: 34vh;
@@ -128,4 +159,62 @@ body, html {
 
 .middle{
     background-color: white;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 52px;
 }
+
+.mid-header {
+    font-weight: 600;
+    margin-bottom: 24px;
+    font-size: 20px;
+}
+
+.middle input {
+    width: 100%;
+    padding: 4px 20px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    border-color: #E5E7EB;
+    border-radius: 4px;
+    border: 1px solid #E5E7EB;
+    
+}
+
+.middle label {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.bottom {
+    box-sizing: border-box;
+    padding-left: 52px;
+    padding-top: 34px;
+}
+
+.submit {
+    background-color: #596D48; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.text {
+    font-size: 14px;
+    margin-top: 30px;
+}
+
+.log-in {
+    color: #596D48;
+  text-decoration: none; /* no underline */
+  font-weight: 600;
+}
+
+
+
+

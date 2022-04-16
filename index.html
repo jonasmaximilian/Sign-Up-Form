@@ -10,23 +10,28 @@
 <body>
     <div class="container">
         <div class="left">
+            <div class="credits">
+                <div class="img-credit">Photo by Halie West on Unsplash</div>
+            </div>
             
             <div class="card-container">
                 <img class="left-picture" src="img/leaves.jpg" alt="leaves">
-                 <div class="card-body">
-                   <div class="card-heading">
-                       
-                   </div>
+                <div class="card-body">
                 <p class="card-paragraph">
-                    <img class="odin-logo" src="img/odin-logo.png" alt="odin-logo">
+                    <div class="odin">
+                        <img class="odin-logo" src="img/odin-logo.png" alt="odin-logo">
+                        Odin
+                    </div>
+                    
                 </p>
                    
               </div>
+              
                   </div>
+                  
         </div>
         <div class="right">
             <div class="top">
-                
                 This is not a real online service! You know you need something 
                 like this in your life to help you realize your deepest dreams. 
                 Sign up now to get started.
@@ -34,9 +39,72 @@
                 <br>
                 You know you want to.
             </div>
-            <div class="middle"></div>
-            <div class="bottom"></div>
+            <form>
+
+            <div class="middle">
+                <div class="mid-header">
+                    Let's do this!
+                </div>
+
+                
+                    <div style="float:left;margin-right:120px;">
+                        <label for="first-name">FIRST NAME</label>
+                        <input id="first-name" type="text" value="" name="first-name">
+                      </div>
+                    
+                      <div style="float:left;">
+                        <label for="last-name">LAST NAME</label>
+                        <input id="last-name" type="text" value="" name="last-name">
+                      </div>
+
+                      <br style="clear:both;" />
+                      <br style="clear:both;" />
+
+                      <div style="float:left;margin-right:120px;">
+                        <label for="email">EMAIL</label>
+                        <input id="email" type="text" value="" name="email">
+                      </div>
+                    
+                      <div style="float:left;">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input id="phone-number" type="tel" value="" name="phone-number">
+                      </div>
+
+                      <br style="clear:both;" />
+                      <br style="clear:both;" />
+
+                      <div style="float:left;margin-right:120px;">
+                        <label for="password">PASSWORD</label>
+                        <input id="password" type="password" value="" name="password id=password">
+                      </div>
+                    
+                      <div style="float:left;">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input id="confirm-password" type="password" value="" name="confirm-password id="password_confirm" oninput="check(this)">
+                      </div>
+                      <script language='javascript' type='text/javascript'>
+                        function check(input) {
+                            if (input.value != document.getElementById('password').value) {
+                                input.setCustomValidity('Password Must be Matching.');
+                            } else {
+                                // input is valid -- reset the error message
+                                input.setCustomValidity('');
+                            }
+                        }
+                    </script>
+
+                
+            </div>
+
+            <div class="bottom">
+                <input class="submit" type="submit" value="Create Account">
+            </form>
+            <div class="text">Already have an Account? <a href="https://google.com" class="log-in">Log in</a></div>
+            </div>
+        
+                    </div>
         </div>
     </div>
+    
 </body>
 </html>
